@@ -1,101 +1,126 @@
+
+<!--
+  Section: Personal Portfolio Website
+  Project: Lab Assignment 1 - Web Dev I
+  Page: index.html
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - John Doe</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    nav a {
-      margin-right: 10px;
-    }
-    table, th, td {
-      border: 1px solid black;
-    }
-    form input, form textarea {
-      display: block;
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 </head>
+
 <body>
 
-  <a href="#main">Skip to main content</a>
 
-  <header>
-    <h1>Varun Pawar</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main id="main">
-    <section id="hero">
-      <h2>Welcome to My Portfolio</h2>
-      <p>Hello! I am a web development student. This is my personal portfolio website.</p>
-    </section>
+    <main id="main-content">
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi! I am a web developer passionate about creating beautiful and functional websites.</p>
+        </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="/profile.jpg" height="150px" width="150px" alt="Profile picture of Varun Pawar">
-      <p>I am passionate about learning web development and building creative projects.</p>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="/picture.jpg" alt="Profile picture of Varun Pawar" height=200px
+                width=200px>
+            <p>I am a creative web developer skilled in HTML, CSS, and JavaScript. I love building projects that make an
+                impact.</p>
+        </section>
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
-        <li>Portfolio Website: A personal one-page website to showcase my bio, skills, and contact details.</li>
-        <li>Blog Clone: A sample blog layout created only with HTML and CSS.</li>
-        <li>User Form: A webpage form with fields like name, email, and message for practicing form handling.</li>
-      </ul>
-    </section>
+        <section id="projects">
+            <h2> My Projects</h2>
+            <ul>
+                <li>
+                    <article>
+                        <p> <b> PORTFOLIO WEBSITE :</b> A personal one page website to show case your bio,skills and contact details.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <p> <b> Medium Clone:</b>A responsive personal blog website with clean design.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <p><b> Birthday card</b> A simple birthday card webpage designed with html structure and styling
+                            css</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <p><b> User Form:</b> A form webpage with fileds like name, email,messgaes for practicing form
+                            handling</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
 
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <table>
-        <tr>
-          <th>Skill</th>
-          <th>Level</th>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>Skilled</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>Learning</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>Learning</td>
-        </tr>
-      </table>
-    </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <h2>Technical Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="1">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                </tr>
+            </tbody>
+        </table>
+        </section>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <br>
+                <br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                <br>
+                <br>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                <br>
+                <br>
 
-  <footer>
-    <p>&copy; 2025 Varun Pawar. All rights reserved.</p>
-  </footer>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
+    <footer>
+        <p> do not copy my code be careful!</p>
+    </footer>
 </body>
+
 </html>
